@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<Employees>
+  <Employee>
+    <Name>Adam Johns</Name>
+    <Age>35</Age>
+    <Gender>M</Gender>
+    <Salary>65000</Salary>
+  </Employee>
+  <Employee>
+    <Name>Norman Sam</Name>
+    <Age>40</Age>
+    <Gender>M</Gender>
+    <Salary>75000</Salary>
+  </Employee>
+  <Employee>
+    <Name>Mary Roberts</Name>
+    <Age>25</Age>
+    <Gender>F</Gender>
+    <Salary>40000</Salary>
+  </Employee>
+  <Employee>
+    <Name>Matthew</Name>
+    <Age>31</Age>
+    <Gender>M</Gender>
+    <Salary>45000</Salary>
+  </Employee>
+</Employees>

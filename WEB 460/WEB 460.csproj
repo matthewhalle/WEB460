@@ -58,6 +58,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="App_Data\AddressBook.accdb" />
     <Content Include="App_Data\AddressBook.mdb" />
+    <Content Include="Week5\Employees.xml" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -76,6 +77,7 @@
     <Content Include="Week2\pgEmail.aspx" />
     <Content Include="Week3\frmAddressBook.aspx" />
     <Content Include="Week4\frmAddressBook.aspx" />
+    <Content Include="Week5\frmEmployees.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -165,6 +167,13 @@
     </Compile>
     <Compile Include="Week4\frmAddressBook.aspx.designer.cs">
       <DependentUpon>frmAddressBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\frmEmployees.aspx.cs">
+      <DependentUpon>frmEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\frmEmployees.aspx.designer.cs">
+      <DependentUpon>frmEmployees.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

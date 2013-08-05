@@ -38,7 +38,7 @@
                         <asp:MenuItem NavigateUrl="~/Week2/pgEmail.aspx" Text="Week 2"/>
                         <asp:MenuItem NavigateUrl="~/Week3/frmAddressBook.aspx" Text="Week 3"/>
                         <asp:MenuItem NavigateUrl="~/Week4/frmAddressBook.aspx" Text="Week 4"/>
-
+                        <asp:MenuItem NavigateUrl="~/Week5/frmEmployees.aspx" Text="Week 5"/>
                     </Items>
                 </asp:Menu>
             </div>
