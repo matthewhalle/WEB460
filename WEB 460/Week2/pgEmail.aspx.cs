@@ -45,7 +45,7 @@ namespace WEB_460.Week2
         //    SmtpClient SMTPServer = new SmtpClient("smtp.gmail.com", 587);
         //    SMTPServer.EnableSsl = true;
         //    SMTPServer.UseDefaultCredentials = false;
-        //    SMTPServer.Credentials = new System.Net.NetworkCredential("halle.matthew@gmail.com", "ftball77");
+        //    SMTPServer.Credentials = new System.Net.NetworkCredential("matthew@gmail.com", "password");
             
 
         //    try
