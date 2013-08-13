@@ -149,6 +149,7 @@ namespace clsDataLayer
         {
             try
             {
+                
                 OleDbConnection dbConn = new OleDbConnection();
                 string strConnection = ("PROVIDER=Microsoft.ACE.OLEDB.12.0;" + ("Data Source=" + path));
                 dbConn.ConnectionString = strConnection;
@@ -214,6 +215,9 @@ namespace clsDataLayer
                 object returnValue;
                 string updateSql = "UPDATE tblUsers SET tblUsers.LoginAttempts = LoginAttempts+1 WHERE tblUsers.UserID = @UserID";
                 dbCmd.CommandText = updateSql;
+                dbCmd.Parameters.AddWithValue("@UserID", userId);
+                System.Threading.Thread.Sleep(1000);
+                dbCmd.CommandText = "SELECT LoginAttempts FROM tblUsers WHERE UserID= @UserID";
                 dbCmd.Parameters.AddWithValue("@UserID", userId);
                 dbCmd.CommandType = CommandType.Text;
                 dbCmd.Connection = dbConn;

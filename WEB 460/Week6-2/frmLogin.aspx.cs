@@ -21,8 +21,8 @@ namespace WEB_460.Week6_2
             if (IsFound == true) 
             {
                 // user credentials were found in the database so notify the system that the user is authenticated
-                // add your code here and comment here
-                //System.Web.Security.FormsAuthentication.SetAuthCookie(txtUserID.Text, false);
+                // add the redirect to week 5 form page
+                System.Web.Security.FormsAuthentication.SetAuthCookie(txtUserID.Text, false);
                 lblStatus.Text = "Login Successfull";
                 Response.Redirect("~/Week5/frmEmployees.aspx");
             }
@@ -30,14 +30,13 @@ namespace WEB_460.Week6_2
             else {
                 // invalid user credentials
                 int myAttempts = clsDataLayer2.LoginAttempts(Server.MapPath("AddressBook.mdb"), txtUserID.Text);
-                //int myAttempts = Convert.ToInt16(Session["AttemptsCount"]);
-                //Session["AttemptCount"] = myAttempts;
+                // return the false attempts by user
                 // update the session variable with the new value
                 lblStatus.Text = "The User ID and/or Password supplied is incorrect. Please try again!";
                 if (myAttempts >= 3)
                 {
                     clsDataLayer2.LockAccount(Server.MapPath("AddressBook.mdb"), txtUserID.Text);
-                    // add your code here to update the user record in the database to reflect that the user account is 'locked
+                    // return if 3 or more false attempts have been made upon a user
                     lblStatus.Text = "Your account has been locked and will need to be reset by the system  administrator!";
                 }
             }
