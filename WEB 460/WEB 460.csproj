@@ -78,6 +78,8 @@
     <Content Include="Week3\frmAddressBook.aspx" />
     <Content Include="Week4\frmAddressBook.aspx" />
     <Content Include="Week5\frmEmployees.aspx" />
+    <Content Include="Week6-2\frmLogin.aspx" />
+    <Content Include="Week6\MyMobilePage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -174,6 +176,20 @@
     </Compile>
     <Compile Include="Week5\frmEmployees.aspx.designer.cs">
       <DependentUpon>frmEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6-2\frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6-2\frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\MyMobilePage.aspx.cs">
+      <DependentUpon>MyMobilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\MyMobilePage.aspx.designer.cs">
+      <DependentUpon>MyMobilePage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

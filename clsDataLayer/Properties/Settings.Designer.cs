@@ -75,5 +75,15 @@ namespace clsDataLayer.Properties {
                 return ((string)(this["AddressBookConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\AddressBook.mdb")]
+        public string AddressBookConnectionString3 {
+            get {
+                return ((string)(this["AddressBookConnectionString3"]));
+            }
+        }
     }
 }

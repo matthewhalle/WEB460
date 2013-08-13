@@ -45,6 +45,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsAddress.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dsUsers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -65,10 +70,26 @@
     <None Include="dsAddress.xss">
       <DependentUpon>dsAddress.xsd</DependentUpon>
     </None>
+    <None Include="dsUsers.xsc">
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+    </None>
+    <None Include="dsUsers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsers.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsUsers.xss">
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddressBook.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
